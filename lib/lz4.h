@@ -32,7 +32,8 @@
    - LZ4 source repository : https://github.com/Cyan4973/lz4
    - LZ4 public forum : https://groups.google.com/forum/#!forum/lz4c
 */
-#pragma once
+#if !defined(__LZ4_H__)
+#define __LZ4_H__
 
 #if defined (__cplusplus)
 extern "C" {
@@ -314,3 +315,5 @@ int LZ4_decompress_fast_withPrefix64k (const char* source, char* dest, int origi
 #if defined (__cplusplus)
 }
 #endif
+
+#endif /* __LZ4_H__ */

@@ -31,8 +31,8 @@
    - LZ4 source repository : https://github.com/Cyan4973/lz4
    - LZ4 public forum : https://groups.google.com/forum/#!forum/lz4c
 */
-#pragma once
-
+#if !defined(__LZ4_HC_H__)
+#define __LZ4_HC_H__
 
 #if defined (__cplusplus)
 extern "C" {
@@ -178,3 +178,5 @@ int   LZ4_resetStreamStateHC(void* state, const char* inputBuffer);
 #if defined (__cplusplus)
 }
 #endif
+
+#endif /* __LZ4_HC_H__ */ 
